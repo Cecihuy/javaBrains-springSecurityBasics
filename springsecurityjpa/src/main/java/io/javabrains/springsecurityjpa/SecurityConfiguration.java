@@ -18,7 +18,7 @@ public class SecurityConfiguration {
     UserDetailsService userDetailsService;
     
     @Autowired
-	public void configure(AuthenticationManagerBuilder builder) throws Exception {
+	public void konfigur(AuthenticationManagerBuilder builder) throws Exception {
 		builder.userDetailsService(userDetailsService);
 	}    
     @Bean
